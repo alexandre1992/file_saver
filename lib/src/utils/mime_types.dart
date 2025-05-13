@@ -1,5 +1,3 @@
-import 'package:collection/collection.dart';
-
 ///[MimeType] is an enum for adding filetype for HTML Blob
 enum MimeType {
   ///[avi] for .avi extension
@@ -74,15 +72,6 @@ enum MimeType {
   ///[mp3] for .mp3 extension
   mp3(name: 'MP3', type: 'audio/mpeg'),
 
-  /// [mp4Video] for .mp4 extension for video files
-  mp4Video(name: 'MP4 Video', type: 'video/mp4'),
-
-  /// [mp4Audio] for .mp4 extension for audio files
-  mp4Audio(name: 'MP4 Audio', type: 'audio/mp4'),
-  
-  /// [mp4Object] for .mp4 extension for other media files with mp4 extension
-  mp4Object(name: 'MP4 Object', type: 'application/mp4'),
-
   ///[other] for other extension
   other(name: 'Other', type: 'application/octet-stream'),
 
@@ -139,8 +128,4 @@ enum MimeType {
   final String name;
   final String type;
   const MimeType({required this.name, required this.type});
-
-  static MimeType? get(String? name) {
-    return MimeType.values.firstWhereOrNull((e) => e.name == name);
-  }
 }

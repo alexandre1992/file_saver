@@ -36,7 +36,7 @@ class Dialog:NSObject, UIDocumentPickerDelegate {
         self.tempURL = fileURL
         var docPicker: UIDocumentPickerViewController?
         if #available(iOS 14.0, *) {
-            docPicker = UIDocumentPickerViewController(forExporting: [fileURL!], asCopy: true)
+            docPicker = UIDocumentPickerViewController(forExporting: [fileURL!])
         } else {
             docPicker = UIDocumentPickerViewController(url: fileURL!, in: .exportToService)
         }

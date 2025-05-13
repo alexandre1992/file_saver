@@ -2,18 +2,6 @@
 
 All notable changes to this project will be documented in this file.
 
-## [0.2.14]
- * Merged PR [#117](https://github.com/incrediblezayed/file_saver/pull/117) to update conditional imports for web (wasm)
- * Merged PR [#121](https://github.com/incrediblezayed/file_saver/pull/121) added dynamic access to enum for whoever need it, 
-    ```dart
-    MimeType.get('pdf');
-    ```
- * Merged PR [#123](https://github.com/incrediblezayed/file_saver/pull/123) for upgrade to web 1.0.0
-
-## [0.2.13]
- * Merge PR [#115](https://github.com/incrediblezayed/file_saver/pull/115) for wasm build
- * Added 3 MP4 mime types for better compatibility with the MP4 files
-
 ## [0.2.12]
  * Minor network related bug fixes, fixing issue [#105](https://github.com/incrediblezayed/file_saver/issues/105) 
  * & Issue [#106](https://github.com/incrediblezayed/file_saver/issues/106)
@@ -100,7 +88,7 @@ All notable changes to this project will be documented in this file.
  * Implemented the web platform without method channel, using the conditional imports.
 
 ## 0.2.1
- * Fixed a bug in web ([git issue #57](https://github.com/incrediblezayed/file_saver/issues/57))
+ * Fixed a bug in web ([git issue #57]("https://github.com/incrediblezayed/file_saver/issues/57))
  * Updated dart version constraints
  * Updated MimeType enum to enhanced enum (from dart 2.17.0) and removed method getMimetype(), if you want to get the mimeType from the enum you can directly write
   ```dart
